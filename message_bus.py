@@ -25,7 +25,9 @@ def send_message(msg_dict):
         _bus[to] = []
 
     _bus[to].append(msg_dict)
-
+    print("MESSAGES BUS STATE:")
+    print(_bus)
+    print("ENNDD")
     print(f"[{msg_dict['timestamp']}] {msg_dict['from_agent'].upper()} → {msg_dict['to_agent'].upper()}: {msg_dict['message_type']}")
 
 
