@@ -4,94 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoFood Connect</title>
+    <title>EcoFood Surplus</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            background-color: #1a1a2e;
-            color: white;
-            text-align: center;
         }
-        header {
-            padding: 50px 20px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
         }
         h1 {
             font-size: 2.5em;
             color: #0f3460;
-            margin: 0;
         }
-        p.subheadline {
-            font-size: 1.2em;
-            margin: 10px 0 30px;
+        h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #ffffff;
         }
         .features {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        .feature-item {
-            width: 80%;
-            max-width: 600px;
-            background-color: #0f3460;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
+            margin-top: 30px;
             text-align: left;
         }
-        .feature-item h2 {
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .icon {
             font-size: 1.5em;
-            color: #1a1a2e;
+            margin-right: 10px;
+            color: #0f3460;
         }
         .cta-button {
-            margin-top: 30px;
+            background-color: #0f3460;
+            color: #ffffff;
+            border: none;
             padding: 15px 30px;
             font-size: 1.2em;
-            color: #1a1a2e;
-            background-color: #0f3460;
-            border: none;
-            border-radius: 8px;
             cursor: pointer;
-            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
         }
         .cta-button:hover {
             background-color: #1a1a2e;
-            color: #0f3460;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Connects budget-conscious and eco-friendly consumers with restaurants offering surplus food at discounted prices</h1>
-        <p class="subheadline">Discover delicious meals at unbeatable prices, all while supporting sustainability.</p>
-    </header>
-    
-    <section class="features">
-        <div class="feature-item">
-            <h2>✓ Anonymous Browsing</h2>
-            <p>Browse food options without knowing the restaurant's brand, focusing on food details and price.</p>
+    <div class="container">
+        <h1>Connect with Surplus Restaurant Food at Discounted Prices</h1>
+        <h2>Discover delicious deals while saving the planet, one meal at a time.</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="icon">✓</span>
+                <div>Easy Navigation: User-friendly interface allowing seamless browsing of food options</div>
+            </div>
+            <div class="feature">
+                <span class="icon">→</span>
+                <div>Quick Checkout: Streamlined checkout process with saved payment methods</div>
+            </div>
+            <div class="feature">
+                <span class="icon">★</span>
+                <div>Real-time Availability: Instant updates on food items as they become available or sell out</div>
+            </div>
+            <div class="feature">
+                <span class="icon">✓</span>
+                <div>Anonymous Browsing: Users browse food options without knowing restaurant names</div>
+            </div>
+            <div class="feature">
+                <span class="icon">→</span>
+                <div>Push Notifications: Alerts for newly listed items and order status updates</div>
+            </div>
         </div>
-        <div class="feature-item">
-            <h2>★ Real-Time Updates</h2>
-            <p>Restaurants update food availability in real time, ensuring users only see what's currently available.</p>
-        </div>
-        <div class="feature-item">
-            <h2>→ Easy Payment</h2>
-            <p>Seamless transaction process within the app, supporting multiple payment methods.</p>
-        </div>
-        <div class="feature-item">
-            <h2>✓ Clear Food Details</h2>
-            <p>Detailed descriptions of food items, including quantity and ingredients, without brand names.</p>
-        </div>
-        <div class="feature-item">
-            <h2>★ Delivery-Only Service</h2>
-            <p>All orders are delivered to the user's location, with no dine-in option, ensuring convenience.</p>
-        </div>
-    </section>
-
-    <button class="cta-button">Get Early Access</button>
+        <button class="cta-button">Get Early Access</button>
+    </div>
 </body>
 </html>
 ```
