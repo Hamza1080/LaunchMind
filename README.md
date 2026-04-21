@@ -24,11 +24,11 @@ The service is delivery-only; no dine-in option is available.
 
 | Agent | LLM Used | Responsibility |
 |---|---|---|
-| CEO Agent | Groq | Orchestrates the full pipeline. Decomposes the startup idea into tasks. Reviews outputs from Product and QA agents. Sends revision requests when output quality is insufficient. Posts the final summary to Slack. |
-| Product Agent | Groq | Receives the startup idea and focus areas from the CEO. Generates a structured product specification including value proposition, user personas, prioritised features, and user stories. Revises the spec on request. |
-| Engineer Agent | Groq | Receives the product spec. Generates a complete HTML landing page. Creates a GitHub issue, commits the HTML to a new branch, and opens a pull request. Returns the PR URL and issue URL to the CEO. |
-| Marketing Agent | Groq | Receives the product spec. Generates a tagline, product description, cold outreach email, and three social media posts. Sends the email via Gmail SMTP and posts a Block Kit message to the Slack workspace. |
-| QA Agent | Groq | Receives the HTML and marketing copy from the CEO. Reviews both against the product spec using LLM reasoning. Posts at least two inline review comments on the GitHub pull request. Returns a structured pass/fail verdict to the CEO. |
+| CEO Agent | gpt-4o | Orchestrates the full pipeline. Decomposes the startup idea into tasks. Reviews outputs from Product and QA agents. Sends revision requests when output quality is insufficient. Posts the final summary to Slack. |
+| Product Agent | gpt-4o  | Receives the startup idea and focus areas from the CEO. Generates a structured product specification including value proposition, user personas, prioritised features, and user stories. Revises the spec on request. |
+| Engineer Agent | gpt-4o  | Receives the product spec. Generates a complete HTML landing page. Creates a GitHub issue, commits the HTML to a new branch, and opens a pull request. Returns the PR URL and issue URL to the CEO. |
+| Marketing Agent | gpt-4o  | Receives the product spec. Generates a tagline, product description, cold outreach email, and three social media posts. Sends the email via Gmail SMTP and posts a Block Kit message to the Slack workspace. |
+| QA Agent | gpt-4o  | Receives the HTML and marketing copy from the CEO. Reviews both against the product spec using LLM reasoning. Posts at least two inline review comments on the GitHub pull request. Returns a structured pass/fail verdict to the CEO. |
 
 ---
 
