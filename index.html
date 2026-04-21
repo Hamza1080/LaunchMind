@@ -4,88 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Friendly Surplus Food App</title>
+    <title>EcoFood Connect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a2e;
-            color: white;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            background-color: #1a1a2e;
+            color: white;
             text-align: center;
+        }
+        header {
+            padding: 50px 20px;
         }
         h1 {
             font-size: 2.5em;
             color: #0f3460;
+            margin: 0;
         }
-        h2 {
+        p.subheadline {
             font-size: 1.2em;
-            margin-top: 10px;
-            color: #f0f0f0;
+            margin: 10px 0 30px;
         }
         .features {
-            margin: 30px 0;
-        }
-        .feature {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: start;
-            padding: 10px 0;
+            padding: 20px;
         }
-        .feature-icon {
+        .feature-item {
+            width: 80%;
+            max-width: 600px;
+            background-color: #0f3460;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .feature-item h2 {
             font-size: 1.5em;
-            margin-right: 10px;
-            color: #0f3460;
+            color: #1a1a2e;
         }
         .cta-button {
-            background-color: #0f3460;
-            color: white;
-            border: none;
+            margin-top: 30px;
             padding: 15px 30px;
-            font-size: 1em;
-            border-radius: 5px;
+            font-size: 1.2em;
+            color: #1a1a2e;
+            background-color: #0f3460;
+            border: none;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
         }
         .cta-button:hover {
-            background-color: #0d2748;
+            background-color: #1a1a2e;
+            color: #0f3460;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>A Mobile App for Budget-Conscious and Eco-Friendly Consumers to Purchase Surplus Restaurant Food at Discounted Prices Anonymously</h1>
-        <h2>Join the movement to reduce food waste and save money with every meal you enjoy.</h2>
-        <div class="features">
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <span>Anonymous Browsing: Focus on food quality and price without restaurant names.</span>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">→</span>
-                <span>Seamless Payment Integration: Quick and secure in-app payment system.</span>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">★</span>
-                <span>Real-Time Availability Updates: Accurate inventory from restaurants.</span>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <span>Discounted Pricing Display: Prominent display of discounted rates.</span>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">→</span>
-                <span>Delivery-Only Service: Meals delivered directly to your location.</span>
-            </div>
+    <header>
+        <h1>Connects budget-conscious and eco-friendly consumers with restaurants offering surplus food at discounted prices</h1>
+        <p class="subheadline">Discover delicious meals at unbeatable prices, all while supporting sustainability.</p>
+    </header>
+    
+    <section class="features">
+        <div class="feature-item">
+            <h2>✓ Anonymous Browsing</h2>
+            <p>Browse food options without knowing the restaurant's brand, focusing on food details and price.</p>
         </div>
-        <button class="cta-button">Get Early Access</button>
-    </div>
+        <div class="feature-item">
+            <h2>★ Real-Time Updates</h2>
+            <p>Restaurants update food availability in real time, ensuring users only see what's currently available.</p>
+        </div>
+        <div class="feature-item">
+            <h2>→ Easy Payment</h2>
+            <p>Seamless transaction process within the app, supporting multiple payment methods.</p>
+        </div>
+        <div class="feature-item">
+            <h2>✓ Clear Food Details</h2>
+            <p>Detailed descriptions of food items, including quantity and ingredients, without brand names.</p>
+        </div>
+        <div class="feature-item">
+            <h2>★ Delivery-Only Service</h2>
+            <p>All orders are delivered to the user's location, with no dine-in option, ensuring convenience.</p>
+        </div>
+    </section>
+
+    <button class="cta-button">Get Early Access</button>
 </body>
 </html>
 ```
